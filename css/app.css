@@ -1,0 +1,55 @@
+body {
+    background-color: #083B4C;
+}
+
+
+
+header {
+    text-align: center;
+    color: white;
+}
+
+
+
+.list-items {
+    width: 75px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #1389B2;
+    color: white;
+    padding-top: calc((75px / 2) - 14px);
+}
+
+.fizz {
+    background-color: #0CD6A1;
+    color: black;
+}
+
+.buzz {
+    background-color: #ffd166;
+    color: black;
+}
+
+.fizzbuzz {
+    background-color: #F0466F;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

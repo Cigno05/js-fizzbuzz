@@ -9,6 +9,7 @@ for (let i = 0; i < number; i++) {
 
 /*creo un 'li' */
     const liElementList = document.createElement('li')
+    liElementList.classList.add('list-items', 'm-1')
 
 /*do il valore a 'li' */
     /*liElementList.innerHTML = num;*/
