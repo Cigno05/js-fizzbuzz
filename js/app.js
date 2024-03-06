@@ -25,23 +25,27 @@ for (let i = 0; i < number; i++) {
     if (multipleOf15 == 0) {
         num = 'fizzbuzz'
         liElementList.innerHTML = num;
+        liElementList.classList.add('fizzbuzz')  /*add class*/
         console.log('fizzbuzz')
 
 /* i multipli di 5 si chiameranno buzz*/        
     } else if (multipleOf5 == 0) {
         num = 'buzz'
         liElementList.innerHTML = num;
+        liElementList.classList.add('buzz')  /*add class*/
         console.log('buzz')
 
 /* i multipli di 3 si chiameranno fizz*/        
     } else if (multipleOf3 == 0) {
         num = 'fizz'
-        liElementList.innerHTML = num;
+        liElementList.innerHTML = num;    
+        liElementList.classList.add('fizz')  /*add class*/
         console.log('fizz')
 
 /*gli altri numeri appariranno come numeri*/        
     } else {
         liElementList.innerHTML = num;
+        liElementList.classList.add('normal')
         console.log(num)
     }
 
