@@ -1,47 +1,56 @@
 console.log('JS funziona')
 
-/* stampa in consoloe i numeri da 1 a 100*/
+const calculatorListElement = document.getElementById('calculator-list')
+
 let number = 100;
 
 for (let i = 0; i < number; i++) {
     let num = i + 1;
-    console.log(num)
-}
-console.log('fine stampa da 1 a 100')
 
-/*i multipli di 3 stampi 'fizz' al posto del numero*/
-for (let i = 0; i < number; i++) {
-    let num = i + 1;
+/*creo un 'li' */
+    const liElementList = document.createElement('li')
+
+/*do il valore a 'li' */
+    /*liElementList.innerHTML = num;*/
+
+/*aggiungo 'li' alla lista*/
+    calculatorListElement.append(liElementList);
+    
+    
     let multipleOf3 = num % 3;
-    if(multipleOf3 == 0) {
-        console.log(num)
-    }
-}
-console.log('fine stampa multipli di 3')
-
-
-/*i multipli di 5 stampi 'buzz' al posto del numero*/
-for (let i = 0; i < number; i++) {
-    let num = i + 1;
     let multipleOf5 = num % 5;
-    if(multipleOf5 == 0) {
+    let multipleOf15 = num % 15;
+
+/* i multipli di 15 si chiameranno fizzbuzz*/
+    if (multipleOf15 == 0) {
+        num = 'fizzbuzz'
+        liElementList.innerHTML = num;
+        console.log('fizzbuzz')
+
+/* i multipli di 5 si chiameranno buzz*/        
+    } else if (multipleOf5 == 0) {
+        num = 'buzz'
+        liElementList.innerHTML = num;
+        console.log('buzz')
+
+/* i multipli di 3 si chiameranno fizz*/        
+    } else if (multipleOf3 == 0) {
+        num = 'fizz'
+        liElementList.innerHTML = num;
+        console.log('fizz')
+
+/*gli altri numeri appariranno come numeri*/        
+    } else {
+        liElementList.innerHTML = num;
         console.log(num)
     }
+
+    
+
+
 }
-console.log('fine stampa multipli di 5')
 
 
-
-/*i multipli di 3 e 5 stampi 'fizzbuzz' al posto del numero*/
-
-for (let i = 0; i < number; i++) {
-    let num = i + 1;
-    let multipleOf3And5 = (num % 3 + num % 5);
-    if(multipleOf3And5 == 0) {
-        console.log(num)
-    }
-}
-console.log('fine stampa multipli di 3 e 5')
 
 
 
